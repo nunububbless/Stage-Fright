@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Freckle+Face&family=Rubik+Dirt&family=Rubik+Glitch&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>About</title>
+    <style>
+        body {
+            font-family: 'Freckle Face', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Keeps the header on top */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+            font-family: 'rubik dirt', cursive;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex: 1;
+        }
+        .logo h1 {
+            margin: 0;
+            color: #E80000;
+            font-size: 50px;
+        }
+        .logo h1 a {
+            text-decoration: none;
+            color: #E80000;
+            font-size: larger;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: white;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown-content a:hover {
+            background-color: lightgray;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .mail-icon {
+            font-size: 20px;
+        }
+        .social-icon {
+        width: 30px;  /* Adjust size of the icons */
+        height: 30px;
+        margin: 0 10px;  /* Space between icons */
+        transition: transform 0.3s ease;  /* Add a hover effect */
+}
+
+    .social-icon:hover {
+        transform: scale(1.2);  /* Enlarge icons slightly when hovered */
+}
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 150px;
+        }
+
+        .photo-item {
+            text-align: center;
+        }
+
+        .photo-item img {
+            margin: 10px;
+            width: 300px;
+            height: 400px;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 20px;
+            font-weight: bold;
+            font-family: 'Freckle Face' cursive;
+            color: #8e6295;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        
+        <div class="dropdown">
+            <button>...</button>
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com/people/Stage-Fright/pfbid0icFCzqKa6DBFB4XLH2yjMKTXa5iVSuubBSaAEhcQ16U2mu9D8P5Q6AEMZPbvYy2nl/"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=synrgz.stagefright@gmail.com" >  <img src="data:image/jpeg;base64,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" alt="Email" class="social-icon"></a>
+                <a href="https://www.instagram.com/stagefright444/"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+        <div class="logo">
+        <h1><a href="StageFright_web.html">STAGE FRIGHT</a></h1>
+    </div>
+    <nav>
+        <a href="tours.html">TOURS</a>
+        <a href="https://2661326.wixsite.com/my-site-1" class="store-button">STORE</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact-form.html" class="mail-icon">&#9993</a>
+    </nav>
+</header>
+    <div class="photo-gallery">
+        <div class="photo-item">
+            <a href="about.html">
+                <img src="https://media.canva.com/v2/image-resize/format:PNG/height:387/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FRfL48%2FMAGXhkRfL48%2F1%2Fp.png/watermark:F/width:269?csig=AAAAAAAAAAAAAAAAAAAAAISTZ1JeMmLKnVv1oyodm-lWrRsTClrrbSZI6kWeYNdx&exp=1732622948&osig=AAAAAAAAAAAAAAAAAAAAACxhohy09ZrnUyp3VN3nT0cylQtsKfuyWXK_fxhT3kkR&signer=media-rpc&x-canva-quality=screen" alt="Image 1">
+                <p class="caption">KAI STEELE<br>LEAD GUITARIST, KNOWN FOR ELECTRIFYING RIFFS</p>
+            </a>
+        </div>
+
+        <div class="photo-item">
+            <a href="about.html">
+                <img src="https://media.canva.com/v2/image-resize/format:PNG/height:387/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2Fphq9o%2FMAGXgPphq9o%2F1%2Fp.png/watermark:F/width:253?csig=AAAAAAAAAAAAAAAAAAAAAOWVutfo-c28qJqIjI9HL9AVW2OjbqJ02_xMfhoLIujl&exp=1732623150&osig=AAAAAAAAAAAAAAAAAAAAAOmarpunfkn6RcAiTOTv2rj7zHD9N7DC2d1Y4X9v_d3g&signer=media-rpc&x-canva-quality=screen" alt="Image 2">
+                <p class="caption">VERA "VOLTAGE"<br> KEYBOARDIST WITH A HAUTINGLY DYNAMIC STYLE</p>
+            </a>
+        </div>
+
+        <div class="photo-item">
+            <a href="about.html">
+                <img src="https://media.canva.com/v2/image-resize/format:PNG/height:456/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FRaFWE%2FMAGXhhRaFWE%2F1%2Fp.png/watermark:F/width:353?csig=AAAAAAAAAAAAAAAAAAAAAOyPBGSiUWxle-XK3IHCVoUY5Efs1pGlBolalrRMYu3q&exp=1732622503&osig=AAAAAAAAAAAAAAAAAAAAAGkl0IVSBEcPnYouldvrrT5roLugJM3gOFk7zr-JknPo&signer=media-rpc&x-canva-quality=screen" alt="Image 3">
+                <p class="caption">ROXY ROCKY<br>DRUMMER, ENERGETIC AND EXPLOSIVE ON STAGE</p>
+            </a>
+        </div>
+
+        <div class="photo-item">
+            <a href="about.html">
+                <img src="https://media.canva.com/v2/image-resize/format:PNG/height:463/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2Fq-BD4%2FMAGXhmq-BD4%2F1%2Fp.png/watermark:F/width:301?csig=AAAAAAAAAAAAAAAAAAAAABki-abVAhIOkQtYhoQOUnvEkea2SBP-jIg5edtR45On&exp=1732621883&osig=AAAAAAAAAAAAAAAAAAAAAEswNOBZC1zO9kMSGkbACm8xh7zKxMiIUp3ztOMRS2Q0&signer=media-rpc&x-canva-quality=screen" alt="Image 4">
+                <p class="caption">JAX "ECHO" RYDER<br>LEAD VOCALIST, WITH A RAW, CHARISMATIC EDGE</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
