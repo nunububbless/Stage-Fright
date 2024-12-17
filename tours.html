@@ -171,13 +171,13 @@
         <!-- Dropdown to select year -->
         <select id="yearSelect">
             <option value ="...">...</option>
-            <option value="2024">2024</option>
             <option value="2025">2025</option>
+            <option value="2026">2026</option>
         </select>
 
         <!-- Message to display when 2024 is selected -->
         <div id="noShowsMessage" style="display:none;">
-            <p>No shows available for 2024.</p>
+            <p>Stay tuned for 2026 Tour Dates!</p>
         </div>
 
         <!-- Table to display tour dates and locations for 2025 -->
@@ -186,6 +186,8 @@
                 <tr>
                     <th>DATES</th>
                     <th>LOCATION</th>
+                    <th>VIP TICKETS</th>
+                    <TH>GA TICKETS</TH>
                 </tr>
             </thead>
             <tbody>
@@ -197,22 +199,22 @@
     <script>
         // Data for 2025 tours
         const tourData = [
-            ["April 5, 2025", "Pittsburgh, PA"],
-            ["April 6, 2025", "Pittsburgh, PA"],
-            ["April 26, 2025", "Cleveland, OH"],
-            ["April 27, 2025", "Cleveland, OH"],
-            ["May 17, 2025", "Indianapolis, IN"],
-            ["May 18, 2025", "Indianapolis, IN"],
-            ["June 7, 2025", "Raleigh, NC"],
-            ["June 8, 2025", "Raleigh, NC"],
-            ["June 21, 2025", "Nashville, TN"],
-            ["June 22, 2025", "Nashville, TN"],
-            ["July 5, 2025", "Tampa, FL"],
-            ["July 6, 2025", "Tampa, FL"],
-            ["July 19, 2025", "San Antonio, TX"],
-            ["July 20, 2025", "San Antonio, TX"],
-            ["August 2, 2025", "Los Angelos, CA"],
-            ["September 10, 2025", "Los Angelos, CA"],
+            ["April 5, 2025", "Pittsburgh, PA","$95","45"],
+            ["April 6, 2025", "Pittsburgh, PA","$95","45"],
+            ["April 26, 2025", "Cleveland, OH","$95","45"],
+            ["April 27, 2025", "Cleveland, OH","$95","45"],
+            ["May 17, 2025", "Indianapolis, IN","$95","45"],
+            ["May 18, 2025", "Indianapolis, IN","$95","45"],
+            ["June 7, 2025", "Raleigh, NC","$95","45"],
+            ["June 8, 2025", "Raleigh, NC","$95","45"],
+            ["June 21, 2025", "Nashville, TN","$95","45"],
+            ["June 22, 2025", "Nashville, TN","$95","45"],
+            ["July 5, 2025", "Tampa, FL","$95","45"],
+            ["July 6, 2025", "Tampa, FL","$95","45"],
+            ["July 19, 2025", "San Antonio, TX","$95","45"],
+            ["July 20, 2025", "San Antonio, TX","$95","45"],
+            ["August 2, 2025", "Los Angelos, CA","$95","45"],
+            ["September 10, 2025", "Los Angelos, CA","$95","45"],
         ];
 
         // Function to handle the year selection
@@ -220,7 +222,7 @@
             const selectedYear = this.value;
 
             // Show the appropriate content based on the selected year
-            if (selectedYear === "2024") {
+            if (selectedYear === "2026") {
                 document.getElementById('noShowsMessage').style.display = 'block';
                 document.getElementById('tourTable').style.display = 'none';
             } else if (selectedYear === "2025") {
