@@ -234,7 +234,12 @@
                 tbody.innerHTML = ''; // Clear existing rows
                 tourData.forEach(function(tour) {
                     const row = document.createElement('tr');
-                    row.innerHTML = `<td>${tour[0]}</td><td>${tour[1]}</td>`;
+                    row.innerHTML = `
+                <td>${tour[0]}</td>
+                <td>${tour[1]}</td>
+                <td>$45</td>
+                <td>$105</td>
+            `;
                     tbody.appendChild(row);
                 });
             }
